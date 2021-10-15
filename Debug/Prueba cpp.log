@@ -1,0 +1,7 @@
+﻿  Campo.cpp
+  Juego.cpp
+C:\Users\titi2021\source\repos\Prueba cpp\Prueba cpp\Juego.h(2,11): error C2006: "#include": se esperaba "FILENAME" o <FILENAME>
+C:\Users\titi2021\source\repos\Prueba cpp\Prueba cpp\Juego.h(2,11): fatal error C1083: No se puede abrir el archivo incluir: '': No such file or directory
+  Jugador.cpp
+  Muniaca.cpp
+  Generando código...
