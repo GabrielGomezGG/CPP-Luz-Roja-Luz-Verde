@@ -1,15 +1,16 @@
 #include "Juego.h"
 
 int main() {
-
+	/*
 	RenderWindow* ventana;
 	ventana = new RenderWindow(VideoMode(500, 500, 32), "SFML");
 
-	ventana->display();
+	ventana->display();*/
 
-	cout << "AAAAAAAAAA" << endl;
+	Juego *juego = new Juego(500, 500, "JDC");
+	juego->gameloop();
 
-	system("PAUSE");
+	
 
 	return 0;
 }
