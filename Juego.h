@@ -1,5 +1,6 @@
 #pragma once
 #include "SFML/Graphics.hpp"
+#include <iostream>
 #include "Jugador.h"
 #include <vector>
 
@@ -10,10 +11,12 @@ class Juego
 {
 private:
 	RenderWindow* ventana;
-	vector<Jugador> *jugadores;
+	//vector<Jugador> *jugadores;
 
 public:
 	Juego(int ancho, int alto, String titulo);
-	void AgregarJugador();
+	void dibujar();
+	void gameloop();
+	//void AgregarJugador();
 };
 
