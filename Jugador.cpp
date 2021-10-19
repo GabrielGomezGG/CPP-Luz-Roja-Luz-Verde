@@ -5,3 +5,8 @@ Jugador::Jugador(int numero, String _nombre) {
 	nombre = _nombre;
 	estado = false;
 }
+
+void Jugador::correr()
+{
+
+}

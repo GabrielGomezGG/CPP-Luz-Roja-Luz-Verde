@@ -12,8 +12,6 @@ private:
 public:
 	Jugador(int, String);
 	void correr();
-	void parar();
-	void mostrarDatos();
 	
 };
 

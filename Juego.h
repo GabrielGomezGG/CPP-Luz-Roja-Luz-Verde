@@ -15,7 +15,17 @@ private:
 
 	//evento
 	Event *evento;
+
+	//lista de jugadores
 	vector<Jugador> *jugadores;
+
+	//fuente y texto
+	Font *fuente;
+	Text *texto;
+
+	//tiempo y relog
+	Clock* relog;
+	Time* tiempo;
 
 public:
 	Juego(int ancho, int alto, String titulo);

@@ -12,11 +12,27 @@ Juego::Juego(int ancho, int alto, String titulo) {
 	//jugadores
 	jugadores = new vector<Jugador>;
 	AgregarJugador(01, "Thiago");
+
+	//texto y fuente
+	fuente = new Font();
+	fuente->loadFromFile("mi.ttf");
+
+	texto = new Text();
+	texto->setFont(*fuente);
+	texto->setString("AAAAAAAAAAA");
+	texto->setCharacterSize(30);
+
+	//tiempo y relog
+	relog = new Clock();
+
+	tiempo = new Time();
 }
 
 void Juego::dibujar()
 {
 	ventana->clear();
+
+	ventana->draw(*texto);
 
 	ventana->display();
 }
