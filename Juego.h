@@ -17,6 +17,7 @@ private:
 	Event *evento;
 
 	//lista de jugadores
+	Jugador* jugador;
 	vector<Jugador> *jugadores;
 
 	//fuente y texto
@@ -27,11 +28,15 @@ private:
 	Clock* relog;
 	Time* tiempo;
 
+	//variables del juego
+	int maxDistancia, maxTiempo;
+
 public:
 	Juego(int ancho, int alto, String titulo);
 	void dibujar();
 	void gameloop();
 	void procesarEventos();
+	void procesarTexto();
 	
 	void AgregarJugador(int numeroJugador, String nombre);
 };
