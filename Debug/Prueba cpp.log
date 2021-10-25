@@ -1,3 +1,19 @@
-﻿  Jugador.cpp
-C:\Users\titi2021\source\repos\Prueba cpp\Prueba cpp\Jugador.cpp(16,29): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+﻿  Juego.cpp
+C:\Users\titi2021\source\repos\Prueba cpp\Prueba cpp\Muniaca.h(5,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\titi2021\source\repos\Prueba cpp\Prueba cpp\Juego.cpp(36,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\titi2021\source\repos\Prueba cpp\Prueba cpp\Juego.cpp(50,42): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\titi2021\source\repos\Prueba cpp\Prueba cpp\Juego.cpp(54,42): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\titi2021\source\repos\Prueba cpp\Prueba cpp\Juego.cpp(55,35): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
   Prueba cpp.vcxproj -> C:\Users\titi2021\source\repos\Prueba cpp\Debug\Prueba cpp.exe
