@@ -24,9 +24,11 @@ public:
 	int getDistancia();
 	Vector2f getPosicion();
 	Sprite getSprite();
+	bool getCorrer();
 
 	//set
 	void setPos(float x, float y);
+	void setCorrer();
 	
 };
 

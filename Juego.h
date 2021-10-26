@@ -28,15 +28,16 @@ private:
 
 	//fuente y texto
 	Font *fuente;
-	Text *texto;
+	Text* tex, * tex_estado_jugador, * tex_estado_munieca,*tex_gameOver;
 
 	//tiempo y relog
-	Clock* relog_m;
-	Time* tiempo_m;
+	Clock* relog_m,*relog_j;
+	Time* tiempo_m, *tiempo_j;
 
 	//variables del juego
 	int maxDistancia, maxTiempo, lineaInicio, lineaFinal;
 	int tiempo_giro;
+	bool game_over;
 	
 
 	//Lineas
@@ -50,6 +51,7 @@ public:
 	void procesarTexto();
 
 	void girarMunieca();
+	void gameOver();
 	
 	void AgregarJugador(int numeroJugador, String nombre);
 };
