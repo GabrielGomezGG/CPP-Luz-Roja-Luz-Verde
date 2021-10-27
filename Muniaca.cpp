@@ -19,6 +19,7 @@ Muniaca::Muniaca(){
 
 	//variables
 	isMirando = false;
+	contador_a_correr = 0;
 
 	f_cantidad = new Vector2i(4, 4);
 	f_size = new Vector2i(s_actual->getTexture()->getSize().x/f_cantidad->x, s_actual->getTexture()->getSize().y / f_cantidad->y);
@@ -131,6 +132,27 @@ void Muniaca::setAnimacion(vector<Vector2i> animacion)
 	}
 
 	
+}
+
+void Muniaca::setAnimacion()
+{
+	if (contador_a_correr < a_ver->size()) {
+		//cout << a_ver->size() << " " << contador_a_correr << endl;
+
+		if (isMirando) {
+			tr_ver = new IntRect(a_ver->at(contador_a_correr), *f_size);
+			s_actual->setTextureRect(*tr_ver);
+		}
+		if (!isMirando) {
+			tr_ocultarse = new IntRect(a_nover->at(contador_a_correr), *f_size);
+			s_actual->setTextureRect(*tr_ocultarse);
+		}
+		contador_a_correr++;
+	}
+	else
+	{
+		contador_a_correr = 0;
+	}
 }
 
 Sprite Muniaca::getSprite()

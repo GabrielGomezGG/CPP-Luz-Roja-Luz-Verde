@@ -11,6 +11,7 @@ class Muniaca{
 
 private:
 	bool isMirando;
+	int contador_a_correr;
 
 	Vector2f* posicion;
 	Vector2i *f_size,*f_cantidad, *f_actual;
@@ -32,6 +33,7 @@ public:
 	//Sprite getSprite(int id);
 	bool getMirando();
 	void setAnimacion(vector<Vector2i> animacion);
+	void setAnimacion();
 	Sprite getSprite();
 
 };
